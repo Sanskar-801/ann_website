@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+#welcome-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flower {
+    width: 100px;
+    height: 300px;
+    position: relative;
+    animation: grow 5s ease-in-out forwards;
+}
+
+.stem {
+    width: 10px;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+}
+
+.petals {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: 50px solid red;
+    border-color: red transparent transparent transparent;
+    animation: bloom 2s ease-in-out 4s forwards;
+}
+
+@keyframes grow {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 300px;
+    }
+}
+
+@keyframes bloom {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#main-content {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Main content styles */
+header {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+h2 {
+    color: #333;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.message {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #ff6f61;
+    color: white;
+}
