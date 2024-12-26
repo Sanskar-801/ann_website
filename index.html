@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+</head>
+<body>
+    <div id="welcome-page">
+        <div class="flower">
+            <div class="stem"></div>
+            <div class="petals"></div>
+        </div>
+        <button id="enter-site">Enter Site</button>
+    </div>
+    <div id="main-content" class="hidden">
+        <header class="animate__animated animate__fadeInDown">
+            <h1>Happy Anniversary</h1>
+        </header>
+        <main>
+            <section id="photos">
+                <h2>Photos</h2>
+                <div class="gallery">
+                    <img src="photo1.jpg" alt="Photo 1">
+                    <img src="photo2.jpg" alt="Photo 2">
+                    <!-- Add more photos as needed -->
+                </div>
+            </section>
+            <section id="videos">
+                <h2>Videos</h2>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+            <section id="messages">
+                <h2>Messages</h2>
+                <div class="message">
+                    <p>Happy Anniversary! - From John</p>
+                </div>
+                <!-- Add more messages as needed -->
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Anniversary Website</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
